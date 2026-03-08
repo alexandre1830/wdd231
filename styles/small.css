@@ -1,0 +1,28 @@
+@media (max-width: 800px) {
+
+    /* Show hamburger icon and hide nav links on small screens */
+    .hamburger-icon {
+        display: flex;
+    }
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+    }
+    .menu-toggle:checked + .hamburger-icon + .nav-links {
+        display: flex;
+        margin-top: 5rem;
+        padding-bottom: 1rem;
+        background-color: var(--light-blue);
+    }
+    nav a:hover{
+        color: white;
+    }
+    .menu-toggle:hover{
+        color: white;
+    }
+}

@@ -1,0 +1,18 @@
+@media (min-width: 801px) {
+
+    nav a:hover{
+        color: white;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+    #photo-section{
+        margin-left: 1rem;
+    }
+
+    #web-certificates-section{
+        grid-column: span 3;
+    }
+}
