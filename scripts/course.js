@@ -80,6 +80,7 @@ const courses = [
 
 const webCertificatesList = document.getElementById('web-certificates-list');
 const courseFilters = document.getElementById('course-filters');
+const creditsCountEl = document.getElementById('credits-count');
 
 function createCourseCard(course) {
     const article = document.createElement('article');
@@ -95,12 +96,17 @@ function createCourseCard(course) {
 function renderCourses(list) {
     if (!webCertificatesList) return;
     webCertificatesList.innerHTML = '';
+    // Update total credits for the currently displayed list using reduce
+    const totalCredits = list.reduce((sum, c) => sum + (Number(c.credits) || 0), 0);
+    if (creditsCountEl) creditsCountEl.textContent = totalCredits;
+
     if (list.length === 0) {
         const p = document.createElement('p');
         p.textContent = 'No courses found.';
         webCertificatesList.appendChild(p);
         return;
     }
+
     list.forEach(course => webCertificatesList.appendChild(createCourseCard(course)));
 }
 
