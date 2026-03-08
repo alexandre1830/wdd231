@@ -93,6 +93,51 @@ main h2{
     margin: 2rem 0;
 }
 
+/* Styles for the web certificates section */
+
+#web-certificates-section {
+    background-color: transparent;
+}
+#web-certificates-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Filter buttons for courses */
+#course-filters{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem 0;
+}
+.filter-btn{
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 700;
+}
+.filter-btn:hover{
+    border: 1px solid var(--dark-blue);
+}
+.filter-btn.active{
+    background-color: var(--dark-blue);
+    color: white;
+    border-color: var(--dark-blue);
+}
+
+.course-card.completed{
+    background-color: var(--light-blue);
+}
+
+.course-card.incomplete{
+    border: 3px solid var(--light-blue);
+}
+
 /*Footer styles */
 footer{
     padding-bottom: 1rem;

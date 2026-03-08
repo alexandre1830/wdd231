@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +28,12 @@
         <span class="name">Alexandre Oliveira</span>
 
         <nav>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-            <label class="hamburger-icon" for="menu-toggle">
+            <button class="hamburger-icon" aria-label="Toggle navigation" aria-expanded="false" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                </svg> 
-            </label>
-    
+                </svg>
+            </button>
+
             <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="chamber.html">Chamber</a></li>
@@ -63,6 +63,12 @@
 
             <section class="card" id="web-certificates-section">
                 <h2>Web Certificate Courses</h2>
+                <div id="course-filters" class="course-filters">
+                    <button type="button" class="filter-btn active" data-subject="ALL">All Courses</button>
+                    <button type="button" class="filter-btn" data-subject="WDD">WDD Courses</button>
+                    <button type="button" class="filter-btn" data-subject="CSE">CSE Courses</button>
+                </div>
+                <div id="web-certificates-list" aria-live="polite"></div>
             </section>
         </div>
     </main>
