@@ -1,0 +1,49 @@
+*{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    color: darkgreen;
+    text-transform: uppercase;
+}
+main{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: darkgreen;
+    text-align: center;
+}
+p{
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333;
+    text-align: center;
+}
+img{
+    padding: 10px 0 10px 0;
+    border-radius: 5%;
+}
+
+section{
+    background-color: #cce0cc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
