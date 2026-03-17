@@ -1,0 +1,128 @@
+:root{
+    --dark-green: #042608;
+    --medium-green: #2a5c0b;
+    --light-green: #808f12;
+    --off-white: #faedd9;
+    font-family: "Roboto", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* General styles for header */
+header{
+    display: flex;
+    background-color: var(--dark-green);
+    color: var(--off-white);
+}
+header h1{
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin: 1rem 0 1rem 2rem;
+}
+#logo-and-title{
+    display: flex;
+    align-items: center;
+}
+#logo-and-title:hover{
+    color: var(--light-green);
+}
+
+/* Show hamburger icon and hide nav links on small screens */
+nav{
+    width: auto;
+}
+
+.hamburger-icon {
+    background-color: transparent;
+    color: var(--off-white);
+    border: none;
+    margin: 1rem;
+}
+.nav-links {
+    display: none; 
+    flex-direction: column;
+}
+nav svg:hover{
+    color: var(--light-green);
+}
+
+/* Show nav when JS toggles the .nav-open class on <nav> */
+nav.nav-open .nav-links {
+    display: flex;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 1000;
+    gap: 2rem;
+}
+nav li:hover{
+    color: var(--light-green);
+}
+.hamburger-icon:hover{
+    color: var(--off-white);
+}
+
+/* Main styles */
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;  
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;    
+}
+section p{
+    text-align: center;
+    padding: .5rem;
+}
+section img{
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+section:hover{
+    background-color: var(--light-green);
+    color: white;
+}
+
+/* Footer styles */
+footer{
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 2rem 4rem;
+}
+.footer-section{
+    margin-bottom: 2rem;
+}
+#footer-info{
+    margin: 0;
+}
+.social-media-link{
+    padding: 20px;
+}
+footer ul li a:hover{
+    color: var(--light-green);
+}

@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Naomi japafood",
+        "opening-hours": "7 PM - 12 AM",
+        "address": "Av. Dep. Ulisses Guimarães - Jardim Rio Branco, São Vicente - SP, 11347-000",
+        "phone": "(13) 98190-0644",
+        "website": "naomijapafood.com.br",
+        "image": "images/naomi.png",
+        "membership-level": "3"
+    },
+    {
+        "name": "Império da Pizza",
+        "opening-hours": "6 PM - 12:30 AM",
+        "address": "Av. Dr. Esmeraldo Soares Tarquínio de Campos Filho, 72 - Parque das Bandeiras, São Vicente - SP, 11346-000",
+        "phone": "(13) 3566-6265",
+        "website": "imperiodapizza.com.br",
+        "image": "images/imperio.jpeg",
+        "membership-level": "3"
+    },
+    {
+        "name": "Meu açaí e Sorvetes",
+        "opening-hours": "3 PM - 12 AM",
+        "address": "R. Oito, 10 - Vila Nova Sao Vicente, São Vicente - SP, 11346-380",
+        "phone": "(13) 98149-7250",
+        "website": "meuacai.com.br",
+        "image": "images/meu-acai.png",
+        "membership-level": "2"
+    },
+    {
+        "name": "Rede Mini Preço Supermercados",
+        "opening-hours": "6 AM - 10 PM",
+        "address": "Av. Dep. Ulisses Guimarães, 1190 - Jardim Rio Branco, São Vicente - SP, 11347-000",
+        "phone": "(13) 3576-9191",
+        "website": "minipreco.com.br",
+        "image": "images/mini-preco.png",
+        "membership-level": "2"
+    },
+    {
+        "name": "Pompeia Supermercados",
+        "opening-hours": "8 AM - 9 PM",
+        "address": "Av. Dr. Esmeraldo Soares Tarquínio de Campos Filho, 760 - Parque das Bandeiras, São Vicente - SP, 11346-000",
+        "phone": "(13) 3559-9987",
+        "website": "pompeiasupermercados.com.br",
+        "image": "images/pompeia.jpg",
+        "membership-level": "2"
+    },
+    {
+        "name": "Posto e Pousada São Jonas",
+        "opening-hours": "Open 24 hours",
+        "address": "Av. Dr. Esmeraldo Soares Tarquínio de Campos Filho, 760 - Parque das Bandeiras, São Vicente - SP, 11346-000",
+        "phone": "(13) 3566-1108",
+        "website": "postosaojonas.com.br",
+        "image": "images/posto-sao-jonas.png",
+        "membership-level": "1"
+    },
+    {
+        "name": "Posto Petrobras",
+        "opening-hours": "Open 24 hours",
+        "address": "Av. Dep. Ulisses Guimarães, 1274 - Loja 4 - Jardim Rio Branco, São Vicente - SP, 11347-000",
+        "phone": "(13) 3576-1935",
+        "website": "postospetrobras.com.br",
+        "image": "images/petrobras.png",
+        "membership-level": "1"
+    },
+    {
+        "name": "Oggi sorvetes",
+        "opening-hours": "10 AM - 9 PM",
+        "address": "Av. Dep. Ulisses Guimarães, 281 / 355 - loja 01 - Jardim Rio Branco, São Vicente - SP, 11347-000",
+        "phone": "(13) 99773-2047",
+        "website": "oggisorvetes.com.br",
+        "image": "images/oggi.png",
+        "membership-level": "1"
+    },
+    {
+        "name": "Restaurante Itabaiana",
+        "opening-hours": "11 AM - 11 PM",
+        "address": "R. Frei Gaspar, 3267 - Cidade Náutica, São Vicente - SP, 11350-000",
+        "phone": "(13) 3464-2065",
+        "website": "restauranteitabaiana.com.br/",
+        "image": "images/itabaiana.jpeg",
+        "membership-level": "1"
+    }
+]

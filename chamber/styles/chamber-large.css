@@ -1,0 +1,147 @@
+@media (min-width: 601px) {
+
+    .hamburger-icon, .menu-toggle {
+        display: none; 
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+    }
+    /* Navigation styles */
+    nav{
+        width: 70%;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        font-weight: bold;
+        padding-left: 2rem;  
+        font-size: 1.2rem; 
+    }
+    nav li:hover{
+        color: var(--light-green);
+    }
+    
+    /* Main styles */
+
+    #cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem;
+
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;  
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 8px;    
+    }
+    section p{
+        text-align: center;
+        padding: .5rem;
+    }
+    section img{
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    /* Footer styles*/
+    footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-green);
+    color: var(--off-white);
+    padding: 2rem 4rem 0 4rem;
+    }
+    #social-media{
+        align-content: center;
+    }
+
+    /* Menu design */
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+    main button{
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        border: 2px solid var(--light-green)
+    }
+    main button:hover {
+        background-color: var(--light-green);
+    }
+    .menu svg{
+        color: var(--dark-green);
+    }
+
+    /* Main cards display options */
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+
+        section {
+            text-align: center;
+            & > * {
+                margin: 0.1rem;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+
+        #cards{
+            display: flex;
+            width: 90%;
+            gap: 1rem;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            height: 100px;
+            margin: 0;
+            padding: 0.25rem;
+
+            & > * {
+                margin: 0 1rem;
+            }
+
+            img {
+                display: none;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            &:nth-child(even) {
+                background-color: var(--dark-green);
+                color: white;
+            }
+            &:nth-child(even):hover {
+                background-color: var(--light-green);
+                color: white;
+            }
+        }
+    }
+
+}
