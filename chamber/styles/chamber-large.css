@@ -1,147 +1,211 @@
 @media (min-width: 601px) {
 
+    /* =============================================
+       HEADER & NAVIGATION (Desktop)
+       ============================================= */
     .hamburger-icon, .menu-toggle {
-        display: none; 
+        display: none;
     }
-    .nav-links{
+
+    header {
+        flex-wrap: nowrap;
+        padding: 0 2rem;
+    }
+    #logo-and-title {
+        flex: 1;
+    }
+    nav {
+        width: auto;
+        flex: 2;
+    }
+
+    /* Override the mobile nav-open full-width rule on desktop */
+    nav.nav-open {
+        width: auto;
+        border-top: none;
+    }
+
+    .nav-links {
         display: flex;
         flex-direction: row;
-        margin: 2rem;
-    }
-    /* Navigation styles */
-    nav{
-        width: 70%;
-    }
-    nav ul{
-        display: flex;
         justify-content: flex-end;
-        gap: 2rem;
-        font-weight: bold;
-        padding-left: 2rem;  
-        font-size: 1.2rem; 
-    }
-    nav li:hover{
-        color: var(--light-green);
-    }
-    
-    /* Main styles */
-
-    #cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem;
-    padding: 4rem;
-
-    }
-    section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding: 1rem;  
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-        border-radius: 8px;    
-    }
-    section p{
-        text-align: center;
-        padding: .5rem;
-    }
-    section img{
-        border-radius: 10px;
-        margin-bottom: 1rem;
+        gap: 2rem;
+        margin: 0;
+        padding-right: 2rem;
+        font-weight: bold;
+        font-size: 1.2rem;
     }
 
-    /* Footer styles*/
-    footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--dark-green);
-    color: var(--off-white);
-    padding: 2rem 4rem 0 4rem;
-    }
-    #social-media{
-        align-content: center;
+    /* =============================================
+       INDEX PAGE: Page Heading ("Home")
+       ============================================= */
+    .page-heading {
+        padding: 1.25rem 4rem 0.25rem;
+        font-size: 2rem;
     }
 
-    /* Menu design */
+    /* =============================================
+       INDEX PAGE: Desktop Hero
+       ============================================= */
+    #hero-button {
+        bottom: 3rem;
+        right: 4rem;
+        padding: 1rem 2.5rem;
+        font-size: 1.2rem;
+    }
+    #hero-button:hover {
+        background-color: var(--dark-green);
+        transform: scale(1.1);
+    }
 
-    .menu{
+    /* =============================================
+       INDEX PAGE: Desktop Info Cards
+       Grid: Events (2fr) | Current Weather (1fr) | Forecast (1fr)
+       ============================================= */
+    .important-information {
+        margin: 1.5rem 4rem 2rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .events-card:hover,
+    .current-weather-card:hover,
+    .weather-forecast-card:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s;
+    }
+
+    /* =============================================
+       INDEX PAGE: Desktop Spotlight Cards
+       ============================================= */
+    .spotlights-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 0.5rem 4rem 3rem;
+    }
+
+    /* On desktop, each spotlight card is still flex-column
+       but the internal content row stays horizontal */
+    .spotlight-card {
+        align-items: stretch;
+    }
+
+    .spotlight-content {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .spotlight-content img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .spotlight-card .info p {
+        font-size: 0.85rem;
+    }
+
+    .spotlight-card:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s;
+    }
+
+    /* =============================================
+       DIRECTORY PAGE: Cards layout
+       ============================================= */
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+        padding: 4rem;
+    }
+
+    .menu {
         display: flex;
         justify-content: center;
         margin-top: 2rem;
         gap: 2rem;
     }
-    main button{
+    main button {
         height: 40px;
         width: 200px;
         border-radius: 10px;
-        border: 2px solid var(--light-green)
+        border: 2px solid var(--light-green);
     }
     main button:hover {
         background-color: var(--light-green);
     }
-    .menu svg{
+    .menu svg {
         color: var(--dark-green);
     }
 
-    /* Main cards display options */
-
+    /* Grid/List modifiers for directory.html */
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 5px;
         align-items: center;
-
-        section {
-            text-align: center;
-            & > * {
-                margin: 0.1rem;
-            }
-        }
     }
-
-    h3 {
-        font-size: 1.2rem;
+    .grid section {
+        text-align: center;
     }
 
     .list {
         display: flex;
         flex-direction: column;
-
-        #cards{
-            display: flex;
-            width: 90%;
-            gap: 1rem;
-        }
-
-        section {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            height: 100px;
-            margin: 0;
-            padding: 0.25rem;
-
-            & > * {
-                margin: 0 1rem;
-            }
-
-            img {
-                display: none;
-            }
-
-            h3 {
-                font-size: 1rem;
-            }
-
-            &:nth-child(even) {
-                background-color: var(--dark-green);
-                color: white;
-            }
-            &:nth-child(even):hover {
-                background-color: var(--light-green);
-                color: white;
-            }
-        }
+    }
+    .list #cards {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        height: 100px;
+        margin: 0;
+        padding: 0.25rem;
+    }
+    .list section img {
+        display: none;
+    }
+    .list section h3 {
+        font-size: 1rem;
+    }
+    .list section:nth-child(even) {
+        background-color: var(--dark-green);
+        color: white;
+    }
+    .list section:nth-child(even):hover {
+        background-color: var(--light-green);
+        color: white;
     }
 
+    /* =============================================
+       FOOTER (Desktop — 3 columns)
+       ============================================= */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 4rem;
+    }
+    #contact-info {
+        flex: 1;
+        text-align: left;
+    }
+    #social-media {
+        flex: 1;
+        justify-content: center;
+        align-content: center;
+    }
+    #footer-info {
+        flex: 1;
+        text-align: right;
+    }
 }

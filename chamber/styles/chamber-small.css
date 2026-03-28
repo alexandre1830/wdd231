@@ -18,9 +18,14 @@ a{
     color: inherit;
 }
 
-/* General styles for header */
+/* =============================================
+   HEADER & NAVIGATION
+   ============================================= */
 header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: var(--dark-green);
     color: var(--off-white);
 }
@@ -32,7 +37,7 @@ header h1{
 #logo{
     width: 50px;
     height: 50px;
-    margin: 1rem 0 1rem 2rem;
+    margin: 1rem 0 1rem 1rem;
 }
 #logo-and-title{
     display: flex;
@@ -42,9 +47,14 @@ header h1{
     color: var(--light-green);
 }
 
-/* Show hamburger icon and hide nav links on small screens */
 nav{
     width: auto;
+}
+
+/* When nav is open, it must expand to full header width so nav-links fills properly */
+nav.nav-open {
+    width: 100%;
+    border-top: 1px solid var(--medium-green);
 }
 
 .hamburger-icon {
@@ -52,76 +62,272 @@ nav{
     color: var(--off-white);
     border: none;
     margin: 1rem;
+    cursor: pointer;
+    display: block; 
 }
 .nav-links {
-    display: none; 
+    display: none;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
 }
-nav svg:hover{
+nav svg:hover, .hamburger-icon:hover {
     color: var(--light-green);
 }
 
-/* Show nav when JS toggles the .nav-open class on <nav> */
 nav.nav-open .nav-links {
     display: flex;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-    z-index: 1000;
+    margin-top: 0;
+    padding: 1rem 0 2rem;
     gap: 2rem;
 }
 nav li:hover{
     color: var(--light-green);
 }
-.hamburger-icon:hover{
+
+/* =============================================
+   INDEX PAGE: Hero
+   ============================================= */
+.hero {
+    position: relative;
+    width: 100%;
+}
+#hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#hero-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--light-green);
     color: var(--off-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background-color 0.2s, transform 0.2s;
 }
 
-/* Main styles */
+/* =============================================
+   INDEX PAGE: Page Heading ("Home")
+   ============================================= */
+.page-heading {
+    padding: 1rem 1.5rem 0.25rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--dark-green);
+}
 
-#cards{
+/* =============================================
+   INDEX PAGE: Important Information Cards
+   ============================================= */
+.important-information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem 1.5rem 1.5rem;
+}
+
+.events-card,
+.current-weather-card,
+.weather-forecast-card {
+    background-color: var(--off-white);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.events-card h2,
+.current-weather-card h2,
+.weather-forecast-card h2 {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 1rem;
+    margin: -1rem -1rem 1rem -1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Forecast entries */
+#forecast p {
+    padding: 0.4rem 0;
+    text-align: left;
+    font-size: 1rem;
+}
+#forecast p strong {
+    font-weight: bold;
+}
+
+/* Weather icon sizing */
+#weather-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+/* =============================================
+   INDEX PAGE: Spotlights container
+   ============================================= */
+section.spotlights {
+    box-shadow: none;
+    padding: 0;
+    background: transparent;
+}
+
+.spotlights-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem 1.5rem 2rem;
+}
+
+/* =============================================
+   INDEX PAGE: Spotlight Cards
+   (Generated dynamically by spotlight.js)
+   ============================================= */
+.spotlight-card {
+    /* Override generic section styles */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--off-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.spotlight-card h3 {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    margin: 0;
+    border-radius: 0; 
+}
+
+.spotlight-card .tagline {
+    text-align: center;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--medium-green); 
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.spotlight-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+/* Spotlight image — override the broad section img rule */
+.spotlight-content img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-bottom: 0; 
+}
+
+.spotlight-card .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.spotlight-card .info p {
+    text-align: left;
+    padding: 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.spotlight-card .info a {
+    color: var(--medium-green);
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.spotlight-card:hover {
+    transform: scale(1.02);
+}
+
+/* =============================================
+   DIRECTORY PAGE: Main styles
+   (Scoped so they don't bleed into index.html)
+   ============================================= */
+#cards {
     display: flex;
     flex-direction: column;
     gap: 4rem;
     padding: 4rem;
-
 }
-section{
+
+/* Generic section styles — only for directory cards inside #cards */
+#cards section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;  
+    padding: 1rem;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;    
+    border-radius: 8px;
 }
-section p{
+#cards section p {
     text-align: center;
     padding: .5rem;
 }
-section img{
+#cards section img {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
-
-section:hover{
+#cards section:hover {
     background-color: var(--light-green);
     color: white;
 }
 
-/* Footer styles */
+/* =============================================
+   FOOTER (Mobile — stacked layout)
+   ============================================= */
 footer{
     background-color: var(--dark-green);
     color: var(--off-white);
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
 }
 .footer-section{
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
-#footer-info{
-    margin: 0;
+#social-media li {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 .social-media-link{
-    padding: 20px;
+    padding: 0.5rem;
 }
 footer ul li a:hover{
     color: var(--light-green);
