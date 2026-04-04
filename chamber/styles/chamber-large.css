@@ -3,28 +3,21 @@
     /* =============================================
        HEADER & NAVIGATION (Desktop)
        ============================================= */
-    .hamburger-icon, .menu-toggle {
-        display: none;
-    }
+    .hamburger-icon, .menu-toggle { display: none; }
 
     header {
         flex-wrap: nowrap;
         padding: 0 2rem;
     }
-    #logo-and-title {
-        flex: 1;
-    }
+    #logo-and-title { flex: 1; }
     nav {
         width: auto;
         flex: 2;
     }
-
-    /* Override the mobile nav-open full-width rule on desktop */
     nav.nav-open {
         width: auto;
         border-top: none;
     }
-
     .nav-links {
         display: flex;
         flex-direction: row;
@@ -37,6 +30,7 @@
         font-size: 1.2rem;
     }
 
+
     /* =============================================
        INDEX PAGE: Page Heading ("Home")
        ============================================= */
@@ -44,6 +38,7 @@
         padding: 1.25rem 4rem 0.25rem;
         font-size: 2rem;
     }
+
 
     /* =============================================
        INDEX PAGE: Desktop Hero
@@ -59,6 +54,7 @@
         transform: scale(1.1);
     }
 
+
     /* =============================================
        INDEX PAGE: Desktop Info Cards
        Grid: Events (2fr) | Current Weather (1fr) | Forecast (1fr)
@@ -69,13 +65,13 @@
         grid-template-columns: 2fr 1fr 1fr;
         gap: 2rem;
     }
-
     .events-card:hover,
     .current-weather-card:hover,
     .weather-forecast-card:hover {
         transform: scale(1.02);
         transition: transform 0.3s;
     }
+
 
     /* =============================================
        INDEX PAGE: Desktop Spotlight Cards
@@ -86,31 +82,21 @@
         gap: 2rem;
         margin: 0.5rem 4rem 3rem;
     }
-
-    /* On desktop, each spotlight card is still flex-column
-       but the internal content row stays horizontal */
-    .spotlight-card {
-        align-items: stretch;
-    }
-
+    .spotlight-card { align-items: stretch; }
     .spotlight-content {
         padding: 1rem;
         gap: 1rem;
     }
-
     .spotlight-content img {
         width: 80px;
         height: 80px;
     }
-
-    .spotlight-card .info p {
-        font-size: 0.85rem;
-    }
-
+    .spotlight-card .info p { font-size: 0.85rem; }
     .spotlight-card:hover {
         transform: scale(1.03);
         transition: transform 0.3s;
     }
+
 
     /* =============================================
        DIRECTORY PAGE: Cards layout
@@ -121,7 +107,6 @@
         gap: 4rem;
         padding: 4rem;
     }
-
     .menu {
         display: flex;
         justify-content: center;
@@ -134,28 +119,18 @@
         border-radius: 10px;
         border: 2px solid var(--light-green);
     }
-    main button:hover {
-        background-color: var(--light-green);
-    }
-    .menu svg {
-        color: var(--dark-green);
-    }
+    main button:hover { background-color: var(--light-green); }
+    .menu svg { color: var(--dark-green); }
 
-    /* Grid/List modifiers for directory.html */
     .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 5px;
         align-items: center;
     }
-    .grid section {
-        text-align: center;
-    }
+    .grid section { text-align: center; }
 
-    .list {
-        display: flex;
-        flex-direction: column;
-    }
+    .list { display: flex; flex-direction: column; }
     .list #cards {
         display: flex;
         flex-direction: column;
@@ -169,21 +144,77 @@
         height: 100px;
         margin: 0;
         padding: 0.25rem;
-    }
-    .list section img {
-        display: none;
-    }
-    .list section h3 {
-        font-size: 1rem;
-    }
-    .list section:nth-child(even) {
         background-color: var(--dark-green);
         color: white;
     }
+    .list section img { display: none; }
     .list section:nth-child(even):hover {
         background-color: var(--light-green);
         color: white;
     }
+
+
+    /* =============================================
+       JOIN PAGE (Desktop): form left, cards right
+       ============================================= */
+
+    /* Override mobile centering on the outer wrapper */
+    .join-container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.5rem;
+        padding: 2rem 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Form occupies the left column — override mobile max-width & margin */
+    #join-form {
+        flex: 1 1 0;
+        max-width: none;
+        margin: 0;
+    }
+
+    /* Cards column on the right */
+    .membership-cards {
+        flex: 0 0 280px;      /* fixed right-column width */
+        max-width: 280px;
+        padding: 0;
+        margin: 0;
+        gap: 1.25rem;
+        /* sticky so cards stay visible while user scrolls the form */
+        position: sticky;
+        top: 1rem;
+        align-self: flex-start;
+    }
+
+    /* Cards stack vertically in the right column */
+    .membership-cards .member-card {
+        text-align: left;
+        align-items: flex-start;
+        padding: 1.1rem 1.2rem;
+    }
+    .membership-cards .member-card h3 { font-size: 0.95rem; }
+    .membership-cards .member-card .modal-trigger { align-self: flex-end; }
+
+
+    /* =============================================
+       DIALOGS / MODALS (Desktop override)
+       ============================================= */
+    dialog {
+        width: 440px;
+    }
+
+
+    /* =============================================
+       THANK-YOU PAGE (Desktop)
+       ============================================= */
+    .thankyou-container {
+        margin: 3rem auto;
+        padding: 2.5rem 3rem;
+    }
+    .thankyou-container h2 { font-size: 2rem; }
+
 
     /* =============================================
        FOOTER (Desktop — 3 columns)

@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <meta name="description" content="A webpage about the Chamber of Commerce in São Vicente, Brazil.">
+    <title>Thank You – São Vicente Chamber of Commerce</title>
+    <meta name="description" content="Application confirmation page for the São Vicente Chamber of Commerce.">
     <meta name="author" content="Alexandre Oliveira">
-
-    <meta property="og:title" content="Chamber of Commerce in São Vicente, Brazil">
-    <meta property="og:description" content="Learn more about the Chamber of Commerce in São Vicente, Brazil, its history, mission and services.">
-    <meta property="og:image" content="https://www.saovicente.sp.gov.br/informacao/novos-pontos-turisticos-valorizam-belezas-naturais-da-cidade-e-turismo-cresce-em-50-nos-ultimos-5-anos/@@images/image">
-    <meta property="og:url" content="https://alexandre1830.github.io/wdd231/chamber.html">
 
     <link rel="icon" href="images/favicon-2.ico">
 
@@ -20,10 +15,6 @@
 
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/join.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +22,6 @@
 </head>
 <body>
     <header>
-        
         <div id="logo-and-title">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16" id="logo">
             <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z"/>
@@ -47,54 +37,27 @@
             </button>
 
             <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+        <div class="thankyou-container">
+            <h2>🎉 Application Received!</h2>
+            <p>Thank you for applying to the São Vicente Chamber of Commerce. We look forward to welcoming you. Here is a summary of the information you submitted:</p>
 
-        <div class="hero">
-            <img src="images/hero.jpg" alt="a beautiful high vision of São Vicente" id="hero-image">
-            <button type="button" href="join.html" id="hero-button">Call to action</button>
+            <dl class="application-summary" id="application-summary">
+                <!-- Populated by the inline script below -->
+            </dl>
+
+            <a href="join.html" class="thankyou-home-link">← Back to Join Page</a>
         </div>
-
-        <h2 class="page-heading">Home</h2>
-
-        <div class="important-information">
-           
-            <div class="events-card">
-                <h2>Events</h2>
-            </div>
-
-            <div class="current-weather-card">
-                <h2>Current Weather</h2>
-                
-                <img id="weather-icon" src="" alt="weather icon">
-                
-                <p id="current-temp"></p>
-                <p id="weather-desc"></p>
-                
-                <p id="high-temp"></p>
-                <p id="low-temp"></p>
-                <p id="humidity"></p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
-            </div>
-
-            <div class="weather-forecast-card">
-                <h2>Weather Forecast</h2>
-                <div id="forecast"></div>
-            </div>
-  
-        </div>
-        <section class="spotlights">
-            <div id="displaySpotlights" class="spotlights-cards" aria-live="polite"></div>
-        </section>
-
     </main>
+
     <footer>
         <div class="footer-section" id="contact-info">
             <p><b>São Vicente Chamber of Commerce</b></p>
@@ -123,12 +86,66 @@
                 </a>
             </li>
         </ul>
+
         <div class="footer-section" id="footer-info">
             <p>WDD 231 Class Project</p>
             <p>Alexandre Oliveira</p>
-            <p>© <span id="current-year"></span> São Vicente Chamber of Commerce</p>
+            <p>&copy; <span id="current-year"></span> São Vicente Chamber of Commerce</p>
             <p>Last modification: <span id="last-modified"></span></p>
         </div>
     </footer>
+
+    <script>
+    // Read URL search params and populate the application summary
+    (function () {
+        const params = new URLSearchParams(window.location.search);
+
+        // Map of param name → readable label
+        const fields = [
+            { key: "first-name",  label: "First Name" },
+            { key: "last-name",   label: "Last Name"  },
+            { key: "email",       label: "Email"      },
+            { key: "phone",       label: "Phone"      },
+            { key: "company",     label: "Organisation" },
+            { key: "timestamp",   label: "Submitted"  },
+        ];
+
+        const dl = document.getElementById("application-summary");
+        if (!dl) return;
+
+        fields.forEach(({ key, label }) => {
+            const raw = params.get(key);
+            if (!raw) return;
+
+            // Format the ISO timestamp into a human-readable string
+            let value = raw;
+            if (key === "timestamp") {
+                try {
+                    value = new Date(raw).toLocaleString("pt-BR", {
+                        dateStyle: "long",
+                        timeStyle: "short",
+                    });
+                } catch (_) { /* leave as-is if parsing fails */ }
+            }
+
+            const dt = document.createElement("dt");
+            dt.textContent = label;
+
+            const dd = document.createElement("dd");
+            dd.textContent = value;
+
+            dl.appendChild(dt);
+            dl.appendChild(dd);
+        });
+
+        // Fallback if no params found (direct access, not via form)
+        if (dl.children.length === 0) {
+            const note = document.createElement("p");
+            note.textContent = "No application data found. Please submit the membership form.";
+            note.style.color = "var(--dark-gray)";
+            dl.replaceWith(note);
+        }
+    })();
+    </script>
 </body>
 </html>
