@@ -240,3 +240,51 @@
         text-align: right;
     }
 }
+/* =============================================
+   DISCOVER PAGE – Large screens (1025 px +)
+   Rich 3-column asymmetric layout:
+   Row 1 : card1 (2 cols) | card2 (1 col)
+   Row 2 : card3 (1 col)  | card4 (1 col) | card5 (1 col)
+   Row 3 : card6 (1 col)  | card7 (2 cols)
+   Row 4 : card8 (full width)
+   ============================================= */
+@media (min-width: 1025px) {
+    .discover-grid {
+        padding: 2rem 4rem 3rem;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "card1 card1 card2"
+            "card3 card4 card5"
+            "card6 card7 card7"
+            "card8 card8 card8";
+    }
+ 
+    /* Hover effect on images */
+    .discover-card figure img {
+        transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+    }
+    .discover-card figure img:hover {
+        transform: scale(1.07) rotate(-0.5deg);
+        filter: brightness(1.1) saturate(1.25);
+    }
+ 
+    /* Wide-span cards get taller images */
+    .discover-card:nth-child(1) figure img,
+    .discover-card:nth-child(7) figure img,
+    .discover-card:nth-child(8) figure img {
+        height: 280px;
+    }
+ 
+    .discover-card h2 { font-size: 1.1rem; }
+ 
+    .discover-heading {
+        padding: 1.25rem 4rem 0.25rem;
+        font-size: 2rem;
+    }
+ 
+    .discover-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    }
+}
