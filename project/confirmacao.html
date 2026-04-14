@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Confirmação do Pedido — Aquele com o Brownie</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo-link" href="index.html" aria-label="Aquele com o Brownie — Página inicial">
+        <img src="images/logo-green.jpg" alt="Logo" width="48" height="48">
+        <div>
+          <div class="logo-name">Aquele com o Brownie</div>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="section">
+      <h1>Pedido recebido</h1>
+      <p>Obrigado! Aqui estão os detalhes do seu pedido:</p>
+      <div id="submission-data" style="margin-top:1rem"></div>
+      <p style="margin-top:1.25rem">Se precisar, entre em contato pelo WhatsApp ou e-mail informados.</p>
+      <p><a href="index.html">Voltar para a página inicial</a></p>
+    </section>
+  </main>
+
+  <script type="module">
+    import { initConfirmation } from './scripts/contact.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initConfirmation();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+[
+  {
+    "id": 1,
+    "name": "O Central Perk",
+    "friendsRef": "Inspirado no café favorito dos seis amigos",
+    "description": "Um brownie intenso com espresso e gotas de chocolate meio amargo. Rico, encorpado e irresistível — exatamente como uma tarde no Central Perk.",
+    "category": "Clássicos",
+    "ingredients": ["Chocolate meio amargo 70%", "Manteiga sem sal", "Açúcar refinado", "Ovos caipiras", "Farinha de trigo", "Espresso concentrado", "Gotas de chocolate"],
+    "sizes": [
+      { "label": "Unitário", "weight": "80g", "price": 12.00 },
+      { "label": "Caixinha (4 un.)", "weight": "320g", "price": 44.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "640g", "price": 84.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-meio-amargo.png"
+  },
+  {
+    "id": 2,
+    "name": "Como Você Está?",
+    "friendsRef": "A pergunta clássica que nunca sai de moda",
+    "description": "O brownie clássico de chocolate que todo mundo ama. Denso, fudgy e com aquela crosta crocante por cima. Uma resposta simples e deliciosa para tudo na vida.",
+    "category": "Clássicos",
+    "ingredients": ["Chocolate meio amargo", "Manteiga", "Açúcar mascavo", "Ovos", "Farinha de trigo", "Cacau em pó", "Baunilha"],
+    "sizes": [
+      { "label": "Unitário", "weight": "80g", "price": 10.00 },
+      { "label": "Caixinha (4 un.)", "weight": "320g", "price": 36.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "640g", "price": 68.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-tradicional.png"
+  },
+  {
+    "id": 3,
+    "name": "O Pivô",
+    "friendsRef": "Como o sofá do Ross, este brownie não passa pela porta sem impressionar",
+    "description": "Red velvet brownie com cream cheese swirl. Um giro inesperado e dramático em todos os sentidos. Pivot! Pivot!",
+    "category": "Especiais",
+    "ingredients": ["Farinha de trigo", "Cacau em pó", "Corante alimentício vermelho", "Cream cheese", "Açúcar", "Ovos", "Manteiga", "Buttermilk"],
+    "sizes": [
+      { "label": "Unitário", "weight": "90g", "price": 14.00 },
+      { "label": "Caixinha (4 un.)", "weight": "360g", "price": 52.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "720g", "price": 98.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": false,
+    "isNew": true,
+    "image": "images/brownie-cream-cheese.png"
+  },
+  {
+    "id": 4,
+    "name": "Lagosta!",
+    "friendsRef": "Phoebe dizia que lagostas se apaixonam para sempre. Você vai se apaixonar por este também.",
+    "description": "Brownie de chocolate branco com coulis de morango fresco. Doce, frutado e apaixonante — a combinação perfeita para a eternidade.",
+    "category": "Especiais",
+    "ingredients": ["Chocolate branco", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo", "Morango fresco", "Suco de limão"],
+    "sizes": [
+      { "label": "Unitário", "weight": "85g", "price": 13.00 },
+      { "label": "Caixinha (4 un.)", "weight": "340g", "price": 48.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "680g", "price": 90.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-chocolate-branco-morango.png"
+  },
+  {
+    "id": 5,
+    "name": "A Pausa",
+    "friendsRef": "Porque algumas combinações simplesmente não estão em pausa",
+    "description": "Brownie de dois chocolates: camada de chocolate meio amargo por baixo e chocolate ao leite por cima, com ganache finalizando. Uma pausa que vale cada mordida.",
+    "category": "Clássicos",
+    "ingredients": ["Chocolate meio amargo 70%", "Chocolate ao leite", "Creme de leite fresco", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo"],
+    "sizes": [
+      { "label": "Unitário", "weight": "90g", "price": 13.00 },
+      { "label": "Caixinha (4 un.)", "weight": "360g", "price": 48.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "720g", "price": 90.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": false,
+    "isNew": false,
+    "image": "images/brownie-dois-chocolates.png"
+  },
+  {
+    "id": 6,
+    "name": "Joey Não Divide Comida",
+    "friendsRef": "JOEY DOESN'T SHARE FOOD! Este brownie é só seu.",
+    "description": "O mega brownie individual — tamanho família para uma pessoa. Chocolate intenso, nozes, gotas de chocolate e calda de caramelo. Não precisar dividir nunca foi tão gostoso.",
+    "category": "Especiais",
+    "ingredients": ["Chocolate amargo 60%", "Manteiga", "Açúcar mascavo", "Ovos", "Farinha de trigo", "Nozes", "Gotas de chocolate", "Caramelo"],
+    "sizes": [
+      { "label": "Individual Gigante", "weight": "200g", "price": 24.00 },
+      { "label": "Duplo (2 un.)", "weight": "400g", "price": 44.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos", "Nozes"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-nozes-caramelo.png"
+  },
+  {
+    "id": 7,
+    "name": "How You Doin'?",
+    "friendsRef": "A linha mais famosa do Joey Tribbiani",
+    "description": "Brownie de caramelo salgado com flor de sal. Irresistível, conquistador e capaz de seduzir qualquer paladar. Como o próprio Joey, ele nunca decepciona.",
+    "category": "Especiais",
+    "ingredients": ["Chocolate meio amargo", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo", "Caramelo artesanal", "Flor de sal", "Creme de leite"],
+    "sizes": [
+      { "label": "Unitário", "weight": "85g", "price": 13.00 },
+      { "label": "Caixinha (4 un.)", "weight": "340g", "price": 48.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "680g", "price": 90.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-caramelo-salgado.png"
+  },
+  {
+    "id": 8,
+    "name": "Smelly Cat",
+    "friendsRef": "Smelly cat, smelly cat, what are they feeding you?",
+    "description": "Brownie de limão siciliano com geleia de maracujá. Cítrico, surpreendente e impossível de tirar da cabeça — igualzinho à música da Phoebe.",
+    "category": "Diferentões",
+    "ingredients": ["Chocolate branco", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo", "Raspas de limão siciliano", "Suco de limão", "Geleia de maracujá"],
+    "sizes": [
+      { "label": "Unitário", "weight": "80g", "price": 13.00 },
+      { "label": "Caixinha (4 un.)", "weight": "320g", "price": 48.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "640g", "price": 90.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": false,
+    "isNew": true,
+    "image": "images/brownie-limao-maracuja.png"
+  },
+  {
+    "id": 9,
+    "name": "Transponster",
+    "friendsRef": "Ninguém sabe ao certo o que é, mas todo mundo ama",
+    "description": "O brownie surpresa da semana. Ingredientes secretos que mudam toda semana. Pode ser qualquer coisa. Pode ser incrível. Provavelmente será incrível.",
+    "category": "Diferentões",
+    "ingredients": ["Chocolate", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo", "...ingredientes surpresa"],
+    "sizes": [
+      { "label": "Unitário", "weight": "80g", "price": 14.00 },
+      { "label": "Caixinha (4 un.)", "weight": "320g", "price": 52.00 }
+    ],
+    "allergens": ["Consulte disponível no pedido"],
+    "isPopular": false,
+    "isNew": false,
+    "image": "images/brownie-surpresa.png"
+  },
+  {
+    "id": 10,
+    "name": "O Sanduíche do Ross",
+    "friendsRef": "O sanduíche mais protegido da história da televisão",
+    "description": "Brownie de nozes e caramelo com cobertura de creme de avelã. Tão bom que você vai escrever o seu nome nele. Não mexa no meu brownie!",
+    "category": "Clássicos",
+    "ingredients": ["Chocolate meio amargo", "Manteiga", "Açúcar mascavo", "Ovos", "Farinha de trigo", "Nozes picadas", "Caramelo", "Creme de avelã"],
+    "sizes": [
+      { "label": "Unitário", "weight": "90g", "price": 14.00 },
+      { "label": "Caixinha (4 un.)", "weight": "360g", "price": 52.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "720g", "price": 98.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos", "Nozes"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-nozes-avela.png"
+  },
+  {
+    "id": 11,
+    "name": "A Cozinha da Monica",
+    "friendsRef": "Feito com o mesmo perfeccionismo da chef Monica Geller",
+    "description": "O brownie gourmet premium. Chocolate belga, flor de sal, framboesas frescas e ouro comestível. Perfeição não é coincidência — é Monica.",
+    "category": "Premium",
+    "ingredients": ["Chocolate belga 72%", "Manteiga Normandia", "Açúcar demerara", "Ovos caipiras", "Farinha de trigo orgânica", "Framboesas frescas", "Flor de sal", "Ouro comestível"],
+    "sizes": [
+      { "label": "Unitário", "weight": "100g", "price": 22.00 },
+      { "label": "Caixinha (4 un.)", "weight": "400g", "price": 82.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "800g", "price": 158.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": false,
+    "isNew": false,
+    "image": "images/brownie-gourmet.png"
+  },
+  {
+    "id": 12,
+    "name": "O Sarcasmo do Chandler",
+    "friendsRef": "Oh, poderia ser mais amargo?",
+    "description": "Brownie 70% cacau com nibs de cacau e espresso duplo. Intenso, amargo e sofisticado — com uma dose extra de atitude. Podia ser mais amargo? Oh, claro que poderia.",
+    "category": "Premium",
+    "ingredients": ["Chocolate amargo 70%", "Nibs de cacau", "Espresso duplo", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo"],
+    "sizes": [
+      { "label": "Unitário", "weight": "85g", "price": 15.00 },
+      { "label": "Caixinha (4 un.)", "weight": "340g", "price": 56.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "680g", "price": 106.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": false,
+    "isNew": false,
+    "image": "images/brownie-cafe.png"
+  },
+  {
+    "id": 13,
+    "name": "A Guitarra da Phoebe",
+    "friendsRef": "Inspirado nas melodias únicas e coloridas da Phoebe Buffay",
+    "description": "Brownie de frutas vermelhas com hibisco. Colorido, diferente, completamente único — e surpreendentemente delicioso. Assim como as músicas da Phoebe.",
+    "category": "Diferentões",
+    "ingredients": ["Chocolate branco", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo", "Mix de frutas vermelhas", "Chá de hibisco", "Baunilha"],
+    "sizes": [
+      { "label": "Unitário", "weight": "85g", "price": 13.00 },
+      { "label": "Caixinha (4 un.)", "weight": "340g", "price": 48.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "680g", "price": 90.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": false,
+    "isNew": true,
+    "image": "images/brownie-frutas-vermelhas.png"
+  },
+  {
+    "id": 14,
+    "name": "Aquele com o Cheesecake",
+    "friendsRef": "Baseado no episódio em que Chandler e Rachel roubam o cheesecake",
+    "description": "Brownie de chocolate com camada de cheesecake assado por cima. Duas sobremesas em uma só, porque você merece tudo. Comer cheesecake do chão é com os outros.",
+    "category": "Especiais",
+    "ingredients": ["Chocolate meio amargo", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo", "Cream cheese", "Creme de leite", "Baunilha"],
+    "sizes": [
+      { "label": "Unitário", "weight": "100g", "price": 15.00 },
+      { "label": "Caixinha (4 un.)", "weight": "400g", "price": 56.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "800g", "price": 106.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-cheesecake.png"
+  },
+  {
+    "id": 15,
+    "name": "Naked Guy",
+    "friendsRef": "Uma homenagem ao vizinho misterioso de frente ao apartamento",
+    "description": "O brownie sem cobertura. Puro, honesto e sem frescura. Às vezes a beleza está na simplicidade. Tão bom que não precisa de nada além de si mesmo.",
+    "category": "Clássicos",
+    "ingredients": ["Chocolate meio amargo 55%", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo", "Cacau em pó", "Extrato de baunilha"],
+    "sizes": [
+      { "label": "Unitário", "weight": "75g", "price": 9.00 },
+      { "label": "Caixinha (4 un.)", "weight": "300g", "price": 32.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "600g", "price": 60.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos"],
+    "isPopular": false,
+    "isNew": false,
+    "image": "images/brownie-normal.png"
+  },
+  {
+    "id": 16,
+    "name": "Os Parceiros de Sesta",
+    "friendsRef": "Chandler e Joey descobriram que tirar soneca juntos é a melhor coisa",
+    "description": "Brownie duplo: um de chocolate com menta e outro de chocolate com amendoim. Dois sabores que foram feitos para estar juntos. Melhor amigos, melhor dupla.",
+    "category": "Especiais",
+    "ingredients": ["Chocolate meio amargo", "Pasta de amendoim", "Extrato de hortelã", "Manteiga", "Açúcar", "Ovos", "Farinha de trigo"],
+    "sizes": [
+      { "label": "Dupla (2 un.)", "weight": "160g", "price": 20.00 },
+      { "label": "Quarteto (4 un. — 2+2)", "weight": "320g", "price": 36.00 },
+      { "label": "Octeto Amigos (8 un. — 4+4)", "weight": "640g", "price": 68.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos", "Amendoim"],
+    "isPopular": false,
+    "isNew": false,
+    "image": "images/brownie-duplo.png"
+  },
+  {
+    "id": 17,
+    "name": "O Que Poderia Ter Sido",
+    "friendsRef": "E se tivesse um brownie sem glúten que fosse igualmente incrível?",
+    "description": "Brownie sem glúten de chocolate com amêndoas e tâmaras. Para quem imaginava que não poderia mais comer brownie de verdade. Este episódio alternativo é delicioso.",
+    "category": "Diferentões",
+    "ingredients": ["Chocolate amargo 70%", "Farinha de amêndoas", "Tâmaras", "Manteiga", "Açúcar de coco", "Ovos", "Cacau em pó"],
+    "sizes": [
+      { "label": "Unitário", "weight": "80g", "price": 15.00 },
+      { "label": "Caixinha (4 un.)", "weight": "320g", "price": 56.00 },
+      { "label": "Caixa Amigos (8 un.)", "weight": "640g", "price": 106.00 }
+    ],
+    "allergens": ["Laticínios", "Ovos", "Amêndoas"],
+    "isPopular": false,
+    "isNew": true,
+    "image": "images/brownie-sem-gluten.png"
+  },
+  {
+    "id": 18,
+    "name": "O Apartamento",
+    "friendsRef": "Assim como o apartamento da Monica — um espaço especial para momentos especiais",
+    "description": "A box premium com os 6 sabores clássicos mais amados, embalados com carinho para presentear. Uma unidade de cada sabor icônico — a experiência completa do nosso universo.",
+    "category": "Premium",
+    "ingredients": ["Seleção dos 6 sabores clássicos", "Embalagem premium", "Cartão personalizado", "Laço de fita"],
+    "sizes": [
+      { "label": "Box 6 Amigos", "weight": "480g", "price": 68.00 },
+      { "label": "Box 12 Amigos", "weight": "960g", "price": 128.00 }
+    ],
+    "allergens": ["Glúten", "Laticínios", "Ovos", "Nozes"],
+    "isPopular": true,
+    "isNew": false,
+    "image": "images/brownie-box.png"
+  }
+]

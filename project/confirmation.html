@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Recebido — Aquele com o Brownie</title>
+  <meta name="description" content="Seu pedido foi recebido! Em breve entraremos em contato para confirmar os detalhes.">
+  <meta name="author" content="Aquele com o Brownie">
+  <meta name="robots" content="noindex">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233f5d16'/><text y='.9em' font-size='75' x='12' fill='%23729e35' font-family='Georgia'>B</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo-link" href="index.html" aria-label="Aquele com o Brownie — Página inicial">
+        <img src="assets/logo.jpg" alt="Logo Aquele com o Brownie" class="logo-img" width="48" height="48">
+        <div>
+          <div class="logo-name">Aquele com o Brownie</div>
+          <div class="logo-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+        <ul class="nav-links" role="list">
+          <li><a class="nav-link" href="index.html">Início</a></li>
+          <li><a class="nav-link" href="products.html">Nossos Produtos</a></li>
+          <li><a class="nav-link" href="contact.html">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary nav-cta" href="contact.html">Fazer Pedido</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav id="mobile-nav" class="mobile-nav" role="navigation" aria-label="Menu mobile">
+    <a class="mobile-nav-link" href="index.html">Início</a>
+    <a class="mobile-nav-link" href="products.html">Nossos Produtos</a>
+    <a class="mobile-nav-link" href="contact.html">Contato</a>
+    <a class="btn btn--dark" href="contact.html" style="margin-top:24px;justify-content:center">Fazer Pedido</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ===== CONFIRMATION ===== -->
+    <section class="section confirmation-section" aria-labelledby="confirm-heading">
+      <div class="container">
+        <div class="confirmation-card">
+          <div class="confirmation-icon" role="img" aria-label="Pedido confirmado"></div>
+
+          <h1 id="confirm-heading">Pedido Recebido!</h1>
+          <p>
+            Recebemos seu pedido e em breve entraremos em contato via WhatsApp ou e-mail para confirmar os detalhes. <strong>Obrigado!</strong>
+          </p>
+
+          <!-- Submission Data -->
+          <div class="submission-data" id="submission-wrapper">
+            <p class="submission-data-title">Resumo do seu pedido</p>
+            <div id="submission-data">
+              <!-- Populated by contact.js -->
+              <p style="color:var(--gray-mid);text-align:center;padding:16px 0">Carregando dados...</p>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+            <a class="btn btn--primary" href="index.html">
+              Voltar ao início
+            </a>
+            <a class="btn btn--dark" href="products.html">
+              Ver mais produtos
+            </a>
+          </div>
+
+          <!-- Friends quote -->
+          <div style="margin-top:32px;padding:20px;background:var(--green-pale);border-radius:var(--radius-md)">
+            <p style="font-style:italic;color:var(--green-dark);font-size:.9rem;margin:0">
+              "Podia ser mais emocionante receber um pedido de brownie? <strong>Oh, claro que não poderia!</strong>"
+            </p>
+            <p style="font-size:.78rem;color:var(--gray-mid);margin:8px 0 0">— Chandler Bing (provavelmente)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="Logo Aquele com o Brownie" class="logo-img" width="56" height="56" loading="lazy">
+          <p>Brownies artesanais temáticos inspirados em Friends. Feitos com carinho, ingredientes selecionados e muito chocolate.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Navegação</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="products.html">Nossos Produtos</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contato</p>
+          <ul class="footer-links">
+            <li><a href="mailto:ola@aquelecomobrownie.com.br">ola@aquelecomobrownie.com.br</a></li>
+            <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+            <li><a href="contact.html">São Paulo, SP</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aquele com o Brownie. Todos os direitos reservados.</p>
+        <a href="atributions.html">Atribuições</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { initNav }          from './scripts/nav.js';
+    import { initConfirmation } from './scripts/contact.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initNav();
+      initConfirmation();
+    });
+  </script>
+
+</body>
+</html>
