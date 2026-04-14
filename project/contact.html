@@ -11,7 +11,8 @@
   <meta property="og:title" content="Contato — Aquele com o Brownie">
   <meta property="og:description" content="Faça seu pedido de brownies artesanais temáticos Friends. Preencha o formulário e entraremos em contato!">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/logo-green.jpg">
+  <meta property="og:url" content="https://alexandre1830.github.io/wdd231/project/contact.html">
+  <meta property="og:image" content="https://alexandre1830.github.io/wdd231/project/images/logo-green.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233f5d16'/><text y='.9em' font-size='75' x='12' fill='%23729e35' font-family='Georgia'>B</text></svg>">
@@ -22,6 +23,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
+  <script type="module">
+    import './scripts/main.js';
+    import { initContact } from './scripts/contact.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // main.js initializes nav and the global scroll-reveal behavior
+      initContact();
+    });
+  </script>
 </head>
 <body>
 
@@ -59,7 +69,7 @@
     <a class="mobile-nav-link" href="index.html">Início</a>
     <a class="mobile-nav-link" href="products.html">Nossos Produtos</a>
     <a class="mobile-nav-link" href="contact.html">Contato</a>
-    <a class="btn btn--dark" href="contact.html" style="margin-top:24px;justify-content:center">Fazer Pedido</a>
+  <a class="btn btn--dark mobile-cta" href="contact.html">Fazer Pedido</a>
   </nav>
 
   <main id="main-content">
@@ -80,7 +90,7 @@
 
           <!-- Form -->
           <div class="reveal">
-            <h2 id="contact-heading" style="margin-bottom:28px">Nos conte o que você quer</h2>
+            <h2 id="contact-heading" class="mb-28">Nos conte o que você quer</h2>
 
             <form
               id="contact-form"
@@ -183,7 +193,7 @@
                 <p class="form-error-msg" id="order-error" role="alert"></p>
               </div>
 
-              <p style="font-size:.8rem;color:var(--gray-mid);margin-bottom:20px">
+              <p class="small-muted mb-20">
                 <span aria-hidden="true">*</span> Campos obrigatórios. Seus dados são usados apenas para processar seu pedido.
               </p>
 
@@ -195,7 +205,7 @@
 
           <!-- Info Cards -->
           <div class="contact-info reveal reveal-delay-1">
-            <h2 style="margin-bottom:28px;font-size:1.4rem">Como nos encontrar</h2>
+            <h2 class="mb-28 h2-compact">Como nos encontrar</h2>
 
             <div class="info-card">
               <div class="info-card-icon" aria-hidden="true"></div>
@@ -230,13 +240,9 @@
             </div>
 
             <!-- Decorative block -->
-            <div style="background:var(--green-pale);border-radius:var(--radius-md);padding:24px;margin-top:8px">
-              <p style="font-size:.9rem;color:var(--green-dark);font-weight:600;margin-bottom:8px">
-                Dica da Monica:
-              </p>
-              <p style="font-size:.85rem;color:var(--gray-dark);margin:0">
-                Quanto mais detalhes você incluir no seu pedido, mais fácil é para prepararmos algo perfeito para você!
-              </p>
+            <div class="callout--pale mt-8">
+              <p class="callout-title">Dica da Monica:</p>
+              <p class="small">Quanto mais detalhes você incluir no seu pedido, mais fácil é para prepararmos algo perfeito para você!</p>
             </div>
           </div>
 
@@ -277,17 +283,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script type="module">
-    import './scripts/main.js';
-    import { initContact } from './scripts/contact.js';
-
-    document.addEventListener('DOMContentLoaded', () => {
-      // main.js initializes nav and the global scroll-reveal behavior
-      initContact();
-    });
-  </script>
-
 </body>
 </html>

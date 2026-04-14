@@ -8,13 +8,6 @@
   <meta name="author" content="Alexandre Oliveira">
   <meta name="keywords" content="brownie, doceria, Friends, encomenda, artesanal, São Paulo">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Aquele com o Brownie">
-  <meta property="og:description" content="Brownies artesanais temáticos inspirados em Friends. Encomendas com carinho e muito chocolate.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aquelecomaobrownie.com.br">
-  <meta property="og:image" content="images/logo-green.jpg">
-
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233f5d16'/><text y='.9em' font-size='75' x='12' fill='%23729e35' font-family='Georgia'>B</text></svg>">
 
@@ -24,6 +17,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
+  <meta property="og:title" content="Aquele com o Brownie — Brownies artesanais">
+  <meta property="og:description" content="Brownies artesanais temáticos inspirados em Friends. Encomende para São Paulo e região — personalizamos sabores, embalagens e datas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexandre1830.github.io/wdd231/project/index.html">
+  <meta property="og:image" content="https://alexandre1830.github.io/wdd231/project/images/logo-green.jpg">
+
+  <script type="module">
+    import { initNav }  from './scripts/nav.js';
+    import { initHome } from './scripts/home.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initNav();
+      initHome();
+    });
+  </script>
 </head>
 <body>
 
@@ -61,7 +69,7 @@
     <a class="mobile-nav-link" href="index.html">Início</a>
     <a class="mobile-nav-link" href="products.html">Nossos Produtos</a>
     <a class="mobile-nav-link" href="contact.html">Contato</a>
-    <a class="btn btn--dark" href="contact.html" style="margin-top:24px;justify-content:center">Fazer Pedido</a>
+  <a class="btn btn--dark mobile-cta" href="contact.html">Fazer Pedido</a>
   </nav>
 
   <main id="main-content">
@@ -114,18 +122,18 @@
     <!-- ===== HIGHLIGHT BAR ===== -->
     <section class="section section--pale" aria-label="Destaques">
       <div class="container">
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center">
+        <div class="highlight-grid">
           <div class="reveal">
-            <div style="font-size:2.5rem;font-weight:900;color:var(--green-dark);font-family:var(--font-heading)" data-counter="18" data-suffix="+">18+</div>
-            <p style="font-weight:600;color:var(--gray-dark);margin:4px 0 0">Sabores no cardápio</p>
+            <div class="stat-number" data-counter="18" data-suffix="+">18+</div>
+            <p class="stat-label">Sabores no cardápio</p>
           </div>
           <div class="reveal reveal-delay-1">
-            <div style="font-size:2.5rem;font-weight:900;color:var(--green-dark);font-family:var(--font-heading)" data-counter="500" data-suffix="+">500+</div>
-            <p style="font-weight:600;color:var(--gray-dark);margin:4px 0 0">Clientes felizes</p>
+            <div class="stat-number" data-counter="500" data-suffix="+">500+</div>
+            <p class="stat-label">Clientes felizes</p>
           </div>
           <div class="reveal reveal-delay-2">
-            <div style="font-size:2.5rem;font-weight:900;color:var(--green-dark);font-family:var(--font-heading)" data-counter="100" data-suffix="%">100%</div>
-            <p style="font-weight:600;color:var(--gray-dark);margin:4px 0 0">Artesanal e sem conservantes</p>
+            <div class="stat-number" data-counter="100" data-suffix="%">100%</div>
+            <p class="stat-label">Artesanal e sem conservantes</p>
           </div>
         </div>
       </div>
@@ -155,12 +163,12 @@
           <div class="reveal reveal-delay-1">
             <p class="section-label">Nossa História</p>
             <h2 id="sobre-heading" class="section-title">
-              Nascemos do amor por Friends <em style="color:var(--green-light);font-style:normal">e por chocolate</em>
+              Nascemos do amor por Friends <em class="text-green-light no-italic">e por chocolate</em>
             </h2>
-            <p style="margin-bottom:20px">
+            <p class="mb-20">
               Tudo começou em um sábado à tarde, com um episódio de Friends passando na TV e a cozinha cheirando a chocolate. A ideia de unir as duas paixões — a série e os brownies — transformou-se no projeto mais saboroso da vida da nossa fundadora.
             </p>
-            <p style="margin-bottom:32px">
+            <p class="mb-32">
               Cada brownie conta uma história. Cada receita homenageia um personagem, um episódio, uma emoção. Porque acreditamos que a comida tem o poder de nos conectar às memórias mais doces da vida — assim como Friends conecta gerações há mais de 30 anos.
             </p>
 
@@ -197,7 +205,7 @@
         <div class="section-header section-header--center">
           <p class="section-label">Como Funciona</p>
           <h2 id="processo-heading" class="section-title section-title--white">Do pedido à sua mesa</h2>
-          <p class="section-sub" style="margin:0 auto">
+          <p class="section-sub mx-auto">
             Simples assim. Em poucos passos, seus brownies estarão a caminho.
           </p>
         </div>
@@ -225,8 +233,8 @@
           </div>
         </div>
 
-        <div style="text-align:center;margin-top:48px" class="reveal">
-          <a class="btn btn--primary" href="contact.html">Fazer meu pedido agora</a>
+        <div class="reveal text-center mt-48">
+          <a class="btn btn--primary cta-btn-lg" href="contact.html">Fazer meu pedido agora</a>
         </div>
       </div>
     </section>
@@ -293,23 +301,23 @@
           </div>
         </div>
 
-        <div style="text-align:center;margin-top:40px" class="reveal">
+        <div class="reveal text-center mt-40">
           <a class="btn btn--dark" href="products.html">Ver todos os produtos →</a>
         </div>
       </div>
     </section>
 
     <!-- ===== CTA FINAL ===== -->
-    <section class="section section--dark" aria-labelledby="cta-heading" style="padding:96px 0">
-      <div class="container" style="text-align:center">
+    <section class="section section--dark section--cta" aria-labelledby="cta-heading">
+      <div class="container text-center">
         <p class="section-label">Pronto para o seu pedido?</p>
-        <h2 id="cta-heading" class="section-title section-title--white" style="margin-bottom:16px">
+  <h2 id="cta-heading" class="section-title section-title--white">
           Faça seu pedido e receba<br>brownies quentinhos em casa
         </h2>
-        <p class="section-sub" style="margin:0 auto 40px">
+  <p class="section-sub mx-auto mb-40">
           Entre em contato agora e vamos montar o pedido perfeito para você ou para presentear alguém especial.
         </p>
-        <a class="btn btn--primary" href="contact.html" style="font-size:1.05rem;padding:18px 40px">
+  <a class="btn btn--primary cta-btn-lg" href="contact.html">
           Quero meu brownie agora!
         </a>
       </div>
@@ -352,17 +360,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script type="module">
-    import { initNav }  from './scripts/nav.js';
-    import { initHome } from './scripts/home.js';
-
-    document.addEventListener('DOMContentLoaded', () => {
-      initNav();
-      initHome();
-    });
-  </script>
-
 </body>
 </html>

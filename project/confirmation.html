@@ -17,6 +17,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
+    <meta property="og:url" content="https://alexandre1830.github.io/wdd231/project/confirmation.html">
+    <meta property="og:image" content="https://alexandre1830.github.io/wdd231/project/images/logo-green.jpg">
+  <script type="module">
+    import { initNav }          from './scripts/nav.js';
+    import { initConfirmation } from './scripts/contact.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initNav();
+      initConfirmation();
+    });
+  </script>
 </head>
 <body>
 
@@ -54,7 +65,7 @@
     <a class="mobile-nav-link" href="index.html">Início</a>
     <a class="mobile-nav-link" href="products.html">Nossos Produtos</a>
     <a class="mobile-nav-link" href="contact.html">Contato</a>
-    <a class="btn btn--dark" href="contact.html" style="margin-top:24px;justify-content:center">Fazer Pedido</a>
+        <a class="btn btn--dark mobile-cta" href="contact.html">Fazer Pedido</a>
   </nav>
 
   <main id="main-content">
@@ -75,12 +86,12 @@
             <p class="submission-data-title">Resumo do seu pedido</p>
             <div id="submission-data">
               <!-- Populated by contact.js -->
-              <p style="color:var(--gray-mid);text-align:center;padding:16px 0">Carregando dados...</p>
+               <p class="text-muted text-center py-16">Carregando dados...</p>
             </div>
           </div>
 
           <!-- Actions -->
-          <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+           <div class="center-flex-wrap">
             <a class="btn btn--primary" href="index.html">
               Voltar ao início
             </a>
@@ -90,11 +101,11 @@
           </div>
 
           <!-- Friends quote -->
-          <div style="margin-top:32px;padding:20px;background:var(--green-pale);border-radius:var(--radius-md)">
-            <p style="font-style:italic;color:var(--green-dark);font-size:.9rem;margin:0">
+           <div class="callout--pale">
+             <p class="italic-note">
               "Podia ser mais emocionante receber um pedido de brownie? <strong>Oh, claro que não poderia!</strong>"
             </p>
-            <p style="font-size:.78rem;color:var(--gray-mid);margin:8px 0 0">— Chandler Bing (provavelmente)</p>
+             <p class="small-muted">— Chandler Bing (provavelmente)</p>
           </div>
         </div>
       </div>
@@ -133,17 +144,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script type="module">
-    import { initNav }          from './scripts/nav.js';
-    import { initConfirmation } from './scripts/contact.js';
-
-    document.addEventListener('DOMContentLoaded', () => {
-      initNav();
-      initConfirmation();
-    });
-  </script>
-
 </body>
 </html>

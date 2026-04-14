@@ -11,7 +11,8 @@
   <meta property="og:title" content="Nossos Produtos — Aquele com o Brownie">
   <meta property="og:description" content="18 sabores de brownies artesanais temáticos inspirados em Friends. Do clássico ao gourmet.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/logo-green.jpg">
+  <meta property="og:url" content="https://alexandre1830.github.io/wdd231/project/products.html">
+  <meta property="og:image" content="https://alexandre1830.github.io/wdd231/project/images/logo-green.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233f5d16'/><text y='.9em' font-size='75' x='12' fill='%23729e35' font-family='Georgia'>B</text></svg>">
@@ -22,6 +23,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/style.css">
+  <script type="module">
+    import { initNav }      from './scripts/nav.js';
+    import { initProducts } from './scripts/products.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initNav();
+      initProducts();
+    });
+  </script>
 </head>
 <body>
 
@@ -59,7 +69,7 @@
     <a class="mobile-nav-link" href="index.html">Início</a>
     <a class="mobile-nav-link" href="products.html">Nossos Produtos</a>
     <a class="mobile-nav-link" href="contact.html">Contato</a>
-    <a class="btn btn--dark" href="contact.html" style="margin-top:24px;justify-content:center">Fazer Pedido</a>
+  <a class="btn btn--dark mobile-cta" href="contact.html">Fazer Pedido</a>
   </nav>
 
   <main id="main-content">
@@ -103,9 +113,9 @@
       <div class="modal-body">
         <div class="modal-header">
           <div>
-            <p id="modal-category" style="font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-light);margin-bottom:6px"></p>
+            <p id="modal-category" class="modal-category"></p>
             <h2 class="modal-title" id="modal-title"></h2>
-            <div id="modal-badges" class="card-badges" style="position:static;margin-top:8px"></div>
+            <div id="modal-badges" class="card-badges modal-badges-inline"></div>
           </div>
           <button class="modal-close" id="modal-close" aria-label="Fechar detalhes do produto">✕</button>
         </div>
@@ -130,10 +140,10 @@
         </div>
 
         <div class="modal-footer">
-          <a class="btn btn--primary" href="contact.html" style="text-decoration:none">
+          <a class="btn btn--primary no-underline" href="contact.html">
             Pedir este brownie
           </a>
-          <button class="btn btn--outline" id="modal-wishlist" style="color:var(--green-dark);border-color:var(--green-dark)">
+          <button class="btn btn--outline outline-green" id="modal-wishlist">
             Adicionar aos favoritos
           </button>
         </div>
@@ -172,17 +182,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script type="module">
-    import { initNav }      from './scripts/nav.js';
-    import { initProducts } from './scripts/products.js';
-
-    document.addEventListener('DOMContentLoaded', () => {
-      initNav();
-      initProducts();
-    });
-  </script>
-
 </body>
 </html>
