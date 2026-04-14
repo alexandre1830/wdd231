@@ -1,0 +1,46 @@
+/* ========================================
+   RESPONSIVE — MOBILE (max 600px)
+   ======================================== */
+
+@media (max-width: 600px) {
+  :root { --header-h: 60px; }
+
+  .container { padding: 0 16px; }
+  .section { padding: 48px 0; }
+
+  /* Hero */
+  .hero { min-height: auto; padding: 64px 0; }
+  .hero-title { font-size: 2.2rem; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+
+  /* About values */
+  .about-values { grid-template-columns: 1fr; }
+
+  /* Process */
+  .process-steps { grid-template-columns: 1fr; }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 180px);
+  }
+
+  /* Products */
+  .products-grid { grid-template-columns: 1fr; }
+
+  /* Form */
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form { padding: 24px; }
+
+  /* Confirmation */
+  .confirmation-card { padding: 32px 20px; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+  /* Modal */
+  .modal-body { padding: 20px; }
+  .modal-header { flex-direction: column-reverse; }
+}
