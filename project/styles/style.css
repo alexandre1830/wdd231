@@ -86,6 +86,17 @@ p { color: var(--gray-dark); line-height: 1.75; }
   padding: 0 24px;
 }
 
+.container--narrow { max-width: 760px; }
+
+.section-title--large { margin-bottom: 40px; }
+
+.attribution-heading { font-size: 1.2rem; margin-bottom: 16px; color: var(--green-dark); }
+
+.mb-16 { margin-bottom: 16px; }
+.mb-40 { margin-bottom: 40px; }
+
+.credits-list { margin-bottom: 40px; display: flex; flex-direction: column; gap: 10px; }
+
 .section { padding: 80px 0; }
 .section--dark { background: var(--green-dark); }
 .section--cream { background: var(--cream); }

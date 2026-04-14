@@ -120,7 +120,7 @@ function submitForm(form) {
   }
 
   // Navigate to confirmation page
-  window.location.href = 'confirmacao.html';
+  window.location.href = 'confirmation.html';
 }
 
 // --- Confirmation Page ---
