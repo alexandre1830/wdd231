@@ -136,7 +136,6 @@ p { color: var(--gray-dark); line-height: 1.75; }
 
 /* Modal / product helpers */
 .modal-category { font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--green-light); margin-bottom:6px; }
-.modal-badges-inline { position: static; margin-top: 8px; }
 .no-underline { text-decoration: none; }
 .outline-green { color: var(--green-dark); border-color: var(--green-dark); }
 
